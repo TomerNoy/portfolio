@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomer | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+<div class="test">
+  <header>
+    <h2>Tomer Noy</h2>
+    <ul id="links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <div class="wordCloud">
+      <div id="awareness">awareness</div>
+      <div id="security">security</div>
+      <div id="code">code</div>
+      <div id="science">science</div>
+      <div id="learn">learn</div>
+      <div id="solution">solution</div>
+      <div id="challenge">challenge</div>
+      <div id="imagination">imagination</div>
+      <div id="dedication">dedication</div>
+      <div id="collaboration">collaboration</div>
+      <div id="maintenance">maintenance</div>
+      <div id="creativity">creativity</div>
+    </div>
+  </section>
+
+  <!-- My projects -->
+  <section class="my-projects" id="projects">
+    <h2 class="section__title section__title--projects">Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="img/kapnroni.png" alt="" />
+        <div class="project__content">
+          <h3 class="">Kap & Roni</h3>
+          <p>Snakes and ladders type of game, based on response speed</p>
+          <h5>Flutter</h5>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="img/diamnet.png" alt="" />
+        <div class="project__content">
+          <h3>DiamNet</h3>
+          <p>Cross platform app for the diamond trading industry</p>
+          <h5>Flutter, Node.js, MongoDB</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">About Me</h2>
+    <!-- <p class="section__subtitle section__subtitle--about">
+      I'm a full stack developer
+    </p> -->
+    <div class="about-me__body">
+      <p>
+        I'm an autodidact full stack developer from Israel with experience in cross
+        platform mobile applications and other web projects
+      </p>
+      <p>With a growing hunger for developing, learning and collaborating!</p>
+    </div>
+    <div class="skills">
+      <ul>
+        <li>HTML\CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Flutter</li>
+        <li>MongoDB</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+
+    <div class="skills language"> 
+      <ul>
+        <li> 
+          Hebrew - <span>native</span>
+        </li>
+        <li>English - <span>professional</span></li>
+        <li>Chinese - <span>fluent</span></li>
+      </ul>
+    </div>
+
+    <img src="img/me.jpg" class="about-me__img" />
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="section__title section__title--contact">Contact</h2>
+    <div class="form">
+      <form action="https://diamnet.vip/site/newsletter" method="post" enctype="text/plain">
+        <input type="text" id="name" name="name" placeholder="name" />
+        <div class="row">
+          <input type="email" id="email" name="email" placeholder="email" />
+        </div>
+
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="subject"
+          style="height: 200px"
+        ></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- replace with your own email address -->
+    <a href="mailto:tomernoy@outlook.com" class="footer__link"
+      >tomernoy@outlook.com</a
+    >
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/TomerNoy">
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a
+          class="social-list__link"
+          href="https://www.linkedin.com/in/tomer-noy-b09966203/"
+        >
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/main.js"></script>
+</div>
+  </body>
+</html>
