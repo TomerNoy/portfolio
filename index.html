@@ -1,169 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ae1d3a79b9.js" crossorigin="anonymous"></script>
     <title>Tomer | Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
-      rel="stylesheet"
-    />
+<body>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- header -->
-<div class="test">
-  <header>
-    <h2>Tomer Noy</h2>
-    <ul id="links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
+    <!--bar-->
+    <div class="bar-top">
+        <div class="container bar-text text-center">
+            <h3 class="p-3 m-0 fw-bold">TOMER NOY <span>
 
-  <!-- Introduction -->
-  <section class="intro" id="home">
-    <div class="wordCloud">
-      <div id="awareness">awareness</div>
-      <div id="security">security</div>
-      <div id="code">code</div>
-      <div id="science">science</div>
-      <div id="learn">learn</div>
-      <div id="solution">solution</div>
-      <div id="challenge">challenge</div>
-      <div id="imagination">imagination</div>
-      <div id="dedication">dedication</div>
-      <div id="collaboration">collaboration</div>
-      <div id="maintenance">maintenance</div>
-      <div id="creativity">creativity</div>
-    </div>
-  </section>
+                    <a class="social-link" target="blank" href="https://github.com/TomerNoy">
+                        <i class="fab fa-github"></i>
+                    </a>
 
-  <!-- My projects -->
-  <section class="my-projects" id="projects">
-    <h2 class="section__title section__title--projects">Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <img src="assets/kapnroni.png" alt="" />
-        <div class="project__content">
-          <h3 class="">Kap & Roni</h3>
-          <p>Snakes and ladders type of game, based on response speed</p>
-          <h5>Flutter</h5>
+                    <a class="social-link" target="blank" href="https://www.linkedin.com/in/tomer-noy-b09966203/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a class="social-link" target="blank" href="https://di-class.slack.com/archives/D02GG2WHP98">
+                        <i class="fab fa-slack"></i>
+                    </a>
+
+                </span></h3>
         </div>
-      </div>
+    </div>
 
-      <div class="project">
-        <img src="assets/diamnet.png" alt="" />
-        <div class="project__content">
-          <h3>DiamNet</h3>
-          <p>Cross platform app for the diamond trading industry</p>
-          <h5>Flutter, Node.js, MongoDB</h5>
+    <section class="about text-center">
+        <h6>
+            I'm a full-stack cross-platform mobile/web developer from Israel
+        </h6>
+        <div class="social">
+            <a href="/assets/TomerNoyCV.pdf" class="link me-3" download>CV Download</a>
+            <a href="mailto:tomernoy@outlook.com" class="link">Email Me</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About me -->
-  <section class="about-me" id="about">
-    <h2 class="section__title section__title--about">About Me</h2>
-    <!-- <p class="section__subtitle section__subtitle--about">
-      I'm a full stack developer
-    </p> -->
-    <div class="about-me__body">
-      <p>
-        I'm an autodidact full stack developer from Israel with experience in cross
-        platform mobile applications and other web projects
-      </p>
-      <p>With a growing hunger for developing, learning and collaborating!</p>
-    </div>
-    <div class="skills">
-      <ul>
-        <li>HTML\CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Flutter</li>
-        <li>MongoDB</li>
-        <li>SQL</li>
-      </ul>
-    </div>
+    <!--jumbotron-->
+    <section class="header">
 
-    <div class="skills language"> 
-      <ul>
-        <li> 
-          Hebrew - <span>native</span>
-        </li>
-        <li>English - <span>professional</span></li>
-        <li>Chinese - <span>fluent</span></li>
-      </ul>
-    </div>
-
-    <img src="assets/me.jpg" class="about-me__img" />
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2 class="section__title section__title--contact">Contact</h2>
-    <div class="form">
-      <form action="https://diamnet.vip/site/newsletter" method="post" enctype="text/plain">
-        <input type="text" id="name" name="name" placeholder="name" />
-        <div class="row">
-          <input type="email" id="email" name="email" placeholder="email" />
+        <div class="wordCloud">
+            <div id="awareness">awareness</div>
+            <div id="security">security</div>
+            <div id="code">code</div>
+            <div id="science">science</div>
+            <div id="learn">learn</div>
+            <div id="solution">solution</div>
+            <div id="challenge">challenge</div>
+            <div id="imagination">imagination</div>
+            <div id="dedication">dedication</div>
+            <div id="collaboration">collaboration</div>
+            <div id="maintenance">maintenance</div>
+            <div id="creativity">creativity</div>
         </div>
 
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="subject"
-          style="height: 200px"
-        ></textarea>
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <!-- replace with your own email address -->
-    <a href="mailto:tomernoy@outlook.com" class="footer__link"
-      >tomernoy@outlook.com</a
-    >
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com/TomerNoy">
-          <i class="fab fa-github fa-lg"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a
-          class="social-list__link"
-          href="https://www.linkedin.com/in/tomer-noy-b09966203/"
-        >
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
+    <section class="projects pb-5">
+        <div class="p-3">
+            <h1 class="m-5 display-5 fw-bold">PROJECTS</h1>
 
-  <script src="main.js"></script>
-</div>
-  </body>
+            <div class="projects-grid">
+
+                <div class="card mb-3 project">
+                    <div class="row g-0">
+                        <div class="col-md-5 card-image">
+                            <img src="assets/knr.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Kap & Roni <span>
+                                        <img class="card-icon" src="assets/icons/flutter.png" alt="...">
+                                    </span></h5>
+                                <hr>
+                                <p class="card-text small">Mobile App</p>
+                                <p class="card-text">A version of the game “snakes and ladders” but based on reaction
+                                    speed
+                                    instead of luck</p>
+                                <p class="card-text">Flutter animations, providers</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/TomerNoy/kap_and_roni" target="blank" class="card-link">
+                                        <i class="fab fa-github card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 project">
+                    <div class="row g-0">
+                        <div class="col-md-5 card-image">
+                            <img src="assets/dn.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">DiamNet <span>
+                                        <img class="card-icon" src="assets/icons/flutter.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/njs.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/nginx.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/ws.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/mongo.png" alt="...">
+                                    </span></h5>
+                                <hr>
+                                <p class="card-text small">Mobile App</p>
+                                <p class="card-text">Cross platform Diamond trading app</p>
+                                <p class="card-text">live chats, reversed Proxies, load balancers, Alibaba Cloud, SMS
+                                    auth, JWT, hashing, encryption, excel uploads, providers
+                                </p>
+                                <div class="card-links">
+                                    <a href="https://diamnet.vip" target="blank" class="card-link">
+                                        <i class="fas fa-globe card-icon"></i>
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.noytrade.diamnet"
+                                        target="blank" class="card-link">
+                                        <i class="fab fa-google-play card-icon"></i>
+                                    </a>
+                                    <a href="https://apps.apple.com/us/app/diamnet/id1497252922?ls=1" target="blank"
+                                        class="card-link">
+                                        <i class="fab fa-app-store card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 project">
+                    <div class="row g-0">
+                        <div class="col-md-5 card-image">
+                            <img src="assets/jewelry_site.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Jewelry Site<span>
+                                        <img class="card-icon" src="assets/icons/django.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/html.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/css.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/sql.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/heroku.png" alt="...">
+                                    </span></h5>
+                                <hr>
+                                <p class="card-text small">Website</p>
+                                <p class="card-text">Cross platform Diamond trading app</p>
+                                <p class="card-text">HTMX integration</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/TomerNoy/diamnet" target="blank" class="card-link">
+                                        <i class="fab fa-github card-icon"></i>
+                                    </a>
+                                    <a href="https://diamnetx.herokuapp.com/" target="blank" class="card-link">
+                                        <i class="fas fa-globe card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 project">
+                    <div class="row g-0">
+                        <div class="col-md-5 card-image">
+                            <img src="assets/temp_mail.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Temp Email<span>
+                                        <img class="card-icon" src="assets/icons/python.png" alt="...">
+                                    </span></h5>
+                                <hr>
+                                <p class="card-text small">Desktop App</p>
+                                <p class="card-text">Temporary email generator on the fly with local inbox</p>
+                                <p class="card-text">With Tkiner</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/TomerNoy/hackathon2" target="blank" class="card-link">
+                                        <i class="fab fa-github card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 project">
+                    <div class="row g-0">
+                        <div class="col-md-5 card-image">
+                            <img src="assets/wk.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">Countdown Timer<span>
+                                        <img class="card-icon" src="assets/icons/html.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/css.png" alt="...">
+                                        <img class="card-icon" src="assets/icons/js.png" alt="...">
+                                    </span></h5>
+                                <hr>
+                                <p class="card-text small">Website</p>
+                                <p class="card-text">Workout intervals with custom exercises</p>
+                                <div class="card-links">
+                                    <a href="https://github.com/TomerNoy/hackathon" target="blank" class="card-link">
+                                        <i class="fab fa-github card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skills">
+
+        <h1 class="m-5 display-5 fw-bold">Skills</h1>
+        <div class="skills-icons">
+            <img src="assets/icons/linux.png" alt="...">
+            <img src="assets/icons/flutter.png" alt="...">
+            <img src="assets/icons/dart.png" alt="...">
+            <img src="assets/icons/html.png" alt="...">
+            <img src="assets/icons/css.png" alt="...">
+            <img src="assets/icons/js.png" alt="...">
+            <img src="assets/icons/njs.png" alt="...">
+            <img src="assets/icons/python.png" alt="...">
+            <img src="assets/icons/django.png" alt="...">
+            <img src="assets/icons/nginx.png" alt="...">
+            <img src="assets/icons/ws.png" alt="...">
+            <img src="assets/icons/aws.png" alt="...">
+            <img src="assets/icons/heroku.png" alt="...">
+            <img src="assets/icons/sql.png" alt="...">
+            <img src="assets/icons/mongo.png" alt="...">
+        </div>
+
+    </section>
+
+    <section class="language">
+        <h1 class="m-5 display-5 fw-bold">Languages</h1>
+        <div class="d-flex justify-content-center mx-5">
+            <h4 class="m-3">Hebrew <span> native</span></h4>
+            <h4 class="m-3">English <span> professional</span></h4>
+            <h4 class="m-3">Chinese <span> fluent</span></h4>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center p-3 pt-4 mt-5 text-light">
+            <h4>® 2021 Tomer Noy</h4>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- my js -->
+    <script src="js/main.js" async defer></script>
+</body>
+
 </html>
