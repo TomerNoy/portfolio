@@ -16,14 +16,14 @@ function animate_word(word) {
         },
         {
             color: '#3c6e71',
-            fontSize: `min(${rand / 1000}vw, 35px)`
+            fontSize: `min(${rand / 1000}vw, 4rem)`,
         },
         {
             color: 'orange',
         },
         {
             color: '#3c6e71',
-            fontSize: `min(${rand / 1000}vw, 35px)`
+            fontSize: `min(${rand / 1000}vw, 4rem)`,
         },
         {
             color: '#1e3748',
