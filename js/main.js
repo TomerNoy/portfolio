@@ -2,37 +2,35 @@ const words = document.getElementById('words').children;
 
 
 function animate_word(word) {
-    var min = 2000,
-        max = 4500;
-    var rand = Math.floor(Math.random() * (max - min + 1) + min);
-    console.log(rand);
+    ran = 1.5 + 1.5 * Math.random();
+    console.log(ran)
 
     word.animate([
         {
-            color: '#1f1f1f',
         },
         {
             color: '#1e3748',
         },
         {
             color: '#3c6e71',
-            fontSize: `min(${rand / 1000}vw, 4rem)`,
+            fontSize: `${ran}em`,
         },
         {
             color: 'orange',
         },
         {
             color: '#3c6e71',
-            fontSize: `min(${rand / 1000}vw, 4rem)`,
+            fontSize: `${ran}em`,
         },
         {
             color: '#1e3748',
         },
         {
-            color: '#1f1f1f',
         },
-    ], { duration: rand * 2 });
-    setTimeout(function () { animate_word(word) }, rand * 4);
+    ], {
+        duration: ran * 3000
+    });
+    setTimeout(function () { animate_word(word) }, ran * 5000);
 }
 
 for (let i = 0; i < words.length; i++) {

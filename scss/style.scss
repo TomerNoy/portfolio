@@ -50,16 +50,21 @@ a:hover {
     display: grid;
     gap: calc(min(0.5vw, 1rem));
     grid-template:
-      '     .              awareness     .             .            science     .           '
-      '     .              awareness     code          code         science     .           '
-      '     .              awareness     imagination   imagination  science     .           '
-      '     dedication     awareness     creativity    security     security    security    '
-      '     collaboration  collaboration collaboration solution     .           .           '
-      '     maintenance    maintenance   learn         solution     challenge   challenge   '
-      '     .              .             .             solution     .           .           ';
+      '.              awareness     .             .            science     .           '  
+      '.              awareness     code          code         science     .           '  minmax(25px, auto)
+      '.              awareness     imagination   imagination  science     .           '  minmax(25px, auto)
+      'dedication     awareness     creativity    security     security    security    '  minmax(25px, auto)
+      'collaboration  collaboration collaboration solution     .           .           '  minmax(25px, auto)
+      'maintenance    maintenance   learn         solution     challenge   challenge   '  minmax(25px, auto)
+      '.              .             .             solution     .           .           '
+      /auto   minmax(15px, auto)    auto          auto         auto        auto;
+      
+    font-size: calc(min(1.5vw, 16px));
+
     & > div {
       width: min-content;
       height: min-content;
+      align-self: center;
       margin: 0;
       padding: 0;
       line-height: 1em;
@@ -87,15 +92,15 @@ a:hover {
 
   #awareness {
     color: $col1;
-    font-size: calc(min(3vw, 2rem));
-    text-align: center;
+    font-size: 2em;
+    align-self: flex-end;
     grid-area: awareness;
     @extend %rotated;
   }
 
   #science {
     color: $col2;
-    font-size: calc(min(2vw, 1.3rem));
+    font-size: 1.5em;
     font-weight: bold;
     grid-area: science;
     align-self: flex-end;
@@ -104,54 +109,53 @@ a:hover {
 
   #code {
     color: $col3;
-    font-size: calc(min(4vw, 3rem));
+    font-size: 3em;
     font-weight: bold;
-    align-self: flex-end;
     grid-area: code;
   }
 
   #security {
     color: $col1;
-    font-size: calc(min(2.5vw, 1.5rem));
+    font-size: 1.8em;
     grid-area: security;
   }
   #learn {
     color: $col2;
-    font-size: calc(min(4.5vw, 3rem));
+    font-size: 3em;
     grid-area: learn;
+    align-self: flex-start;
   }
   #solution {
     color: $col3;
-    font-size: calc(min(3vw, 2rem));
+    font-size: 2em;
     grid-area: solution;
     @extend %rotated;
+    align-self: flex-start;
   }
 
   #challenge {
     color: $col1;
-    font-size: calc(min(3vw, 2rem));
+    font-size: 1.7em;
     grid-area: challenge;
-    align-self: flex-end;
-
+    align-self: flex-start;
   }
 
   #imagination {
     color: $col2;
-    font-size: calc(min(3vw, 2rem));
-    align-self: flex-end;
+    font-size: 1.8em;
     grid-area: imagination;
   }
 
   #dedication {
     color: $col3;
-    font-size: calc(min(3vw, 2rem));
+    font-size: 2.3em;
     grid-area: dedication;
     font-weight: bold;
     justify-self: flex-end;
   }
   #collaboration {
     color: $col1;
-    font-size: calc(min(3vw, 2rem));
+    font-size: 1.8em;
     font-weight: bold;
     grid-area: collaboration;
     justify-self: flex-end;
@@ -159,13 +163,14 @@ a:hover {
   #maintenance {
     color: $col2;
     grid-area: maintenance;
-    font-size: calc(min(3vw, 2rem));
+    font-size: 1.8em;
     justify-self: flex-end;
+    align-self: flex-start;
   }
 
   #creativity {
     color: $col3;
-    font-size: calc(min(5vw, 4rem));
+    font-size: 3.5em;
     grid-area: creativity;
     font-weight: bold;
   }
