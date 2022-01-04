@@ -7,6 +7,7 @@ function animate_word(word) {
 
     word.animate([
         {
+            // skills
         },
         {
             color: '#1e3748',
