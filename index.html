@@ -12,7 +12,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- icons -->
     <script src="https://kit.fontawesome.com/ae1d3a79b9.js" crossorigin="anonymous"></script>
     <title>Tomer | Portfolio</title>
     <link rel="icon" href="assets/icons/icon.png">
@@ -20,48 +22,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-<body>
-
-    <!--bar-->
-    <section class="bar">
-        <div class="container mt-4">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-xl-auto text-center">
-                    <p id="title" class="title">TOMER NOY</p>
+<body data-spy="scroll" data-target=#my-nav data-bs-offset="75">
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="my-nav">
+            <div class="container">
+                <div class="col">
+                    <a class="nav-link row title m-0 p-0" href="#home"> TOMER NOY </a>
+                    <p class="navbar-text row subtitle m-0 p-0">Full-Stack Developer</p>
                 </div>
-                <div class="col-xl-auto text-center">
-                    <p class="m-0">Full-stack cross-platform mobile/web developer from Israel</p>
-                </div>
-                <div class="col-xl-auto text-center">
-                    <a href="/assets/TomerNoyCV.pdf" class="me-3" download>CV Download</a>
-                    <a href="mailto:tomernoy@outlook.com">Email Me</a>
-                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#languages">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
 
-                <div class="col-xl-auto text-center">
-                    <a class="text-decoration-none mx-1 fs-1" target="blank" href="https://github.com/TomerNoy">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a class="text-decoration-none mx-1 fs-1" target="blank"
-                        href="https://www.linkedin.com/in/tomer-noy-b09966203/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                    <a class="text-decoration-none mx-1 fs-1" target="blank"
-                        href="https://di-class.slack.com/archives/D02GG2WHP98">
-                        <i class="fab fa-slack"></i>
-                    </a>
-
-                    <a class="text-decoration-none mx-1 fs-1" target="blank" href="https://medium.com/@mail2tomer">
-                        <i class="fab fa-medium-m"></i>
-                    </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- <span class="navbar-nav"> text</span> -->
                 </div>
             </div>
-        </div>
+        </nav>
     </section>
 
     <!--jumbotron-->
-    <section class="cloud">
+    <section class="cloud container" id="home">
         <div class="wordCloud" id="words">
             <div id="awareness">awareness</div>
             <div id="security">security</div>
@@ -80,9 +82,9 @@
         </div>
     </section>
 
-    <section class="projects pb-5">
-        <div class="p-3">
-            <h1 class="m-5 display-6 fw-bold" id="title2">PROJECTS</h1>
+    <section class="projects pb-5" id="projects">
+        <div class="p-3 container">
+            <h1 class="display-6" id="title2">PROJECTS</h1>
 
             <div class="projects-grid">
 
@@ -200,7 +202,7 @@
                                 <hr>
                                 <p class="card-text small">Desktop App</p>
                                 <p class="card-text">Temporary email generator on the fly with local inbox</p>
-                                <p class="card-text">With Tkiner</p>
+                                <p class="card-text">With Tkinter</p>
                                 <div class="card-links">
                                     <a href="https://github.com/TomerNoy/hackathon2" target="blank" class="card-link">
                                         <i class="fab fa-github card-icon"></i>
@@ -251,11 +253,10 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills container" id="skills">
 
-        <h1 class="m-5 display-6 fw-bold">SKILLS</h1>
         <div>
-            <img src="assets/icons/linux.png" alt="...">
+            <img data-bs-toggle="tooltip" data-bs-html="true" title="hi" src="assets/icons/linux.png" alt="...">
             <img src="assets/icons/flutter.png" alt="...">
             <img src="assets/icons/dart.png" alt="...">
             <img src="assets/icons/html.png" alt="...">
@@ -275,8 +276,8 @@
 
     </section>
 
-    <section class="articles">
-        <h1 class="m-5 display-6 fw-bold">ARTICLES</h1>
+    <section class="articles container" id="articles">
+        <h1 class="display-6">ARTICLES</h1>
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <iframe class="col-md m-3"
@@ -289,8 +290,8 @@
         </div>
     </section>
 
-    <section class="language">
-        <h1 class="m-5 display-6 fw-bold">LANGUAGES</h1>
+    <section class="language container" id="languages">
+        <h1 class="display-6">LANGUAGES</h1>
         <div class="d-flex justify-content-center mx-5">
             <h4 class="m-3">Hebrew <span> native</span></h4>
             <h4 class="m-3">English <span> professional</span></h4>
@@ -298,9 +299,138 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container text-center p-3 pt-4 mt-5 text-light">
-            <h4>® 2021 Tomer Noy</h4>
+    <section class="about container" id="about">
+        <p class="display-6">ABOUT</p>
+
+        <p> <strong> Im an autodidact passionate full-stack developer from Israel with total of 13 years in
+                China</strong>
+        </p>
+        <p> <u>Background highlights</u></p>
+        <p>
+            After my army service i traveled to China and spent 4 years traveling and studying mandarin.
+        </p>
+        <p>
+            Later i've work in Israel in a man-power company as a translator and negotiator for la large number of
+            construction
+            worker, after two years i've worked for the Chinese consulate while studying computer science in the
+            Open University.
+        </p>
+
+        <p>
+            After four years i migrated back to China due to a business offer as a diamond trader, after three years
+            of working for different companies i've become independent in the field. <br> Quickly me and my colleges saw
+            the potential of having a mobile app to make trading more reliable and
+            dynamic, so in few months i taught myself to create simple mobile apps and developed my first model with
+            Flutter.
+        </p>
+
+        <p>
+            <u> My career as a developer begins </u>
+        </p>
+        <p>
+            After showing my model to the company DiamNet i was hired as a developer and within few months i've
+            developed an app for viewing/updating supplier's stock lists. <br> After two years the company decided to
+            release the app to online stores which required a lot of self research and development to further advance my
+            full-stack skills.
+        </p>
+
+        <p>
+            Due to the Covid pandemic 2020 i went back to Israel and continued my development and maintenance,
+            after a year and a half i've decided to stay in Israel due to personal and economic reasons.
+        </p>
+        <p>
+
+        </p>
+        <p>
+            Wanting to grow as a developer in Israel i've participated in Full-Stack Python and Data bootcamp in
+            <span><a href="https://developers.institute/en/" target="blank">DI</a></span>.
+            after 3 months i've graduated with much success and larger showcase of projects and later was hired as an
+            Instructor at the same college.
+        </p>
+        <p>
+
+        </p>
+        <br>
+        <p>
+            Currently I'm teaching at <span><a href="https://developers.institute/en/" target="blank">DI</a></span>
+            while looking for collaborating with other developers and continuing my career in the Israel Hi-Tech market.
+        </p>
+        <br>
+        <p>
+            Feel free to send me a message and download my
+            <span><a href="/assets/TomerNoyCV.pdf" download>CV</a></span>.
+        </p>
+
+    </section>
+
+    <section class="contact container" id="contact">
+
+        <h1 class="display-6">CONTACT</h1>
+
+        <div class="row justify-content-center">
+            <form role="form" id="contact-form" class="contact-form" method="post"
+                action="https://formspree.io/f/mjvlwgbq">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name"
+                                placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email"
+                                placeholder="E-mail">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control textarea" rows="3" name="Message" id="Message"
+                                placeholder="Content"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn main-btn pull-right">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <footer class="fixed-bottom">
+        <div class="container text-light text-center p-2">
+            <div class="d-flex justify-content-around">
+
+                <h5 class="align-self-center m-0">® 2021 Tomer Noy</h5>
+
+                <div class="align-self-center">
+                    <a class="text-decoration-none text-light mx-1 fs-2" target="blank"
+                        href="https://github.com/TomerNoy">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a class="text-decoration-none text-light mx-1 fs-2" target="blank"
+                        href="https://www.linkedin.com/in/tomer-noy-b09966203/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a class="text-decoration-none text-light mx-1 fs-2" target="blank"
+                        href="https://di-class.slack.com/archives/D02GG2WHP98">
+                        <i class="fab fa-slack"></i>
+                    </a>
+
+                    <a class="text-decoration-none text-light mx-1 fs-2" target="blank"
+                        href="https://medium.com/@mail2tomer">
+                        <i class="fab fa-medium-m"></i>
+                    </a>
+                </div>
+
+            </div>
         </div>
     </footer>
 
@@ -308,7 +438,7 @@
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"> </script>
 
     <!-- my js -->
     <script src="js/main.js" async defer></script>
