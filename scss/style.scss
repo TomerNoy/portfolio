@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap");
 
 $col1: #1f1f1f;
 $col2: #1e3748;
@@ -24,7 +24,7 @@ $animation-duration: 5s;
 }
 
 html * {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 html > * {
@@ -74,13 +74,13 @@ a {
     display: grid;
     gap: calc(min(0.5vw, 1rem));
     grid-template:
-      '     .              awareness     .             .            science     .           '
-      '     .              awareness     code          code         science     .           '
-      '     .              awareness     imagination   imagination  science     .           '
-      '     dedication     awareness     creativity    security     security    security    '
-      '     collaboration  collaboration collaboration solution     .           .           '
-      '     maintenance    maintenance   learn         solution     challenge   challenge   '
-      '     .              .             .             solution     .           .           ';
+      "     .              awareness     .             .            science     .           "
+      "     .              awareness     code          code         science     .           "
+      "     .              awareness     imagination   imagination  science     .           "
+      "     dedication     awareness     creativity    security     security    security    "
+      "     collaboration  collaboration collaboration solution     .           .           "
+      "     maintenance    maintenance   learn         solution     challenge   challenge   "
+      "     .              .             .             solution     .           .           ";
     & > div {
       width: min-content;
       height: min-content;
@@ -196,7 +196,7 @@ a {
 
 .projects {
   background-color: gray;
-  background-image: url('/assets/bg.jpeg');
+  background-image: url("/assets/bg.jpeg");
   background-size: cover;
   background-blend-mode: multiply;
   color: white;
@@ -232,13 +232,16 @@ a {
   .card-image {
     display: inline-block;
     overflow: hidden;
+    // background-color: white;
+    // padding: 10px;
     img {
       transition: transform 0.2s;
       height: 100%;
       width: 100%;
-      min-height: 22rem;
+      max-height: 350px;
       object-fit: cover;
-      object-position: left top;
+      object-position: top left;
+      // border-radius: 15px;
       -webkit-transition: transform 0.2s;
       -moz-transition: transform 0.2s;
       -ms-transition: transform 0.2s;
